@@ -68,10 +68,31 @@
 
 }
 
+.title {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 2.9rem;
+}
+
+.text {
+  &-1 {
+    font-weight: 500
+  }
+
+  &-2 {
+    font-weight: lighter
+  }
+
+  &-1,
+  &-2 {
+    font-size: 2rem
+  }
+}
+
 html {
-  /*
-   * For more information on dynamic font scaling, visit the documentation:
-   * https://ionicframework.com/docs/layout/dynamic-font-scaling
-   */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
