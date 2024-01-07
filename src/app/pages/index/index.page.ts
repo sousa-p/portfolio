@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.page.scss'],
 })
 export class IndexPage implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  hideFab: Boolean = true;
+
+  onScroll(event: any) {
+    const content = event.target;
+    this.hideFab = content.scrollTop <= content.offsetHeight;
   }
-
 }

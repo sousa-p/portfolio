@@ -1,6 +1,14 @@
-<ion-content [fullscreen]="true">
+<main (scroll)="onScroll($event)">
   <app-section-home></app-section-home>
   <app-section-about></app-section-about>
   <app-section-tech></app-section-tech>
   <app-section-projects></app-section-projects>
-</ion-content>
+
+  <ion-fab [class.ion-hide]="this.hideFab" class="ion-margin" vertical="bottom" horizontal="end" slot="fixed">
+    <a href="#home">
+      <ion-fab-button>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </ion-fab-button>
+    </a>
+  </ion-fab>
+</main>

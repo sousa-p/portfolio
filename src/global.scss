@@ -26,6 +26,13 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 
+*,
+html,
+ion-content#main {
+  scroll-behavior: smooth !important;
+}
+
+
 h1 {
   font-weight: bolder;
   font-size: 3.5rem;
