@@ -2,9 +2,14 @@ h1 {
   margin-bottom: 7vh;
 }
 
+li {
+  list-style: none;
+}
+
 .card {
   margin-bottom: 32px;
   border: solid 6px #000;
   height: 400px;
+  min-width: 240px;
   min-height: 75vh;
 }

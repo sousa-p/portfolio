@@ -1,3 +1,29 @@
-#projects {
-  background: url('../../../assets/images/projects/bottom-wave.svg') no-repeat bottom;
+h1 {
+  margin-bottom: 7vh;
+}
+
+.slide {
+  margin: 0 auto;
+  width: 300px;
+  height: 450px;
+  border: solid 6px #000;
+  background: var(--ion-background-color, #fff);
+}
+
+.swiper-pagination {
+  margin-top: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 100%;
+  color: #000;
+  background-color: var(--ion-background-color, #fff);
+  border: solid 6px #000;
+}
+
+.swiper-container {
+  --swiper-pagination-color: var(--ion-color-primary);
 }
