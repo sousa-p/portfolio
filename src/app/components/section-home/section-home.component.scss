@@ -1,7 +1,30 @@
-.section-home {
-  --background: url('../../../assets/images/home/bg.svg') no-repeat center;
+#home {
+  background: url('../../../assets/images/home/bg.svg') no-repeat center;
 }
 
-.main {
-  padding-top: 105px;
+.nav {
+  margin: 7vh 0;
+
+  a {
+    text-decoration: none;
+    transition: .3s all ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.pic {
+  margin: 7vh 0 36px 0;
+
+  .photo {
+    position: absolute;
+    z-index: -1;
+    width: min(228px, 75%);
+  }
+
+  .circle {
+    width: min(278px, 85%);
+  }
 }

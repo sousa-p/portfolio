@@ -68,31 +68,6 @@
 
 }
 
-.title {
-  font-weight: bolder;
-  font-size: 4rem;
-}
-
-.subtitle {
-  font-weight: bold;
-  font-size: 2.9rem;
-}
-
-.text {
-  &-1 {
-    font-weight: 500
-  }
-
-  &-2 {
-    font-weight: lighter
-  }
-
-  &-1,
-  &-2 {
-    font-size: 2rem
-  }
-}
-
 html {
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
