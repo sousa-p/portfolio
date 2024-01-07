@@ -38,16 +38,13 @@ h2 {
 
 .text {
   &-1 {
-    font-weight: bold
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   &-2 {
-    font-weight: lighter
-  }
-
-  &-1,
-  &-2 {
-    font-size: 2rem
+    font-weight: lighter;
+    font-size: 1.5rem
   }
 }
 

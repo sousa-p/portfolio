@@ -1,3 +1,19 @@
-.section-about {
-  --background: url('../../../assets/images/about/top-wave.svg') no-repeat top;
+#about {
+  background: url('../../../assets/images/about/top-wave.svg') no-repeat top;
+}
+
+
+.content {
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin-bottom: 25vh;
+}
+
+#line {
+  height: 50vh;
+  width: 6px;
+
+  background-color: #000;
 }
