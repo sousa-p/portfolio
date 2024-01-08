@@ -2,8 +2,18 @@
   background: url('../../../assets/images/home/bg.svg') no-repeat center;
 }
 
+a {
+  ion-icon {
+    transition: .3s all ease;
+
+    &:hover {
+      color: #616161;
+    }
+  }
+}
+
 .nav {
-  margin: 7vh 0;
+  margin: 3vh 0;
 
   a {
     text-decoration: none;
@@ -16,7 +26,6 @@
 }
 
 .pic {
-  animation: bounce 2s linear infinite alternate;
   margin: 7vh 0 36px 0;
 
   .photo {

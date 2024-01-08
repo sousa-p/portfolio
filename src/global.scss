@@ -65,6 +65,15 @@ h2 {
   animation: bounce 1.2s ease-in-out infinite alternate;
 }
 
+.bounce-d {
+  position: relative;
+  animation: bounce .9s ease-in-out 1s infinite alternate;
+}
+
+.shake {
+  animation: shake .9s ease-in-out 1s infinite alternate;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(.2rem);
@@ -72,5 +81,17 @@ h2 {
 
   100% {
     transform: translateY(0rem);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+    rotate: -8deg;
+  }
+
+  100% {
+    transform: scale(1.15);
+    rotate: 8deg;
   }
 }

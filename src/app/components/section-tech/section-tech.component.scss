@@ -9,4 +9,9 @@ h1 {
   height: 400px;
   min-width: 240px;
   min-height: 75vh;
+  transition: .3s all ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
