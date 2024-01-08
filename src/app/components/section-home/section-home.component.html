@@ -2,17 +2,17 @@
   <ion-row class="ion-justify-content-center">
     <ion-col class="main" sizeLg="6" sizeMd="8" size="12">
       <ion-row class="ion-justify-content-between nav">
-        <ion-col size="auto">
+        <ion-col size="auto" [@fadeIn-1]>
           <ion-text class="text-1">
             <a href="#about">About</a>
           </ion-text>
         </ion-col>
-        <ion-col size="auto">
+        <ion-col size="auto" [@fadeIn-2]>
           <ion-text class="text-1">
             <a href="#projects">Projects</a>
           </ion-text>
         </ion-col>
-        <ion-col size="auto">
+        <ion-col size="auto" [@fadeIn-3]>
           <ion-text class="text-1">
             <a href="#tech">Tech.</a>
           </ion-text>
@@ -21,12 +21,12 @@
       <ion-row class="ion-justify-content-center texts">
         <ion-col size="12">
           <ion-text class="ion-text-center">
-            <h1>Frontend & Backend</h1>
-            <h2>Hi! My name is Pedro that is my portfolio!</h2>
+            <h1 [@fadeIn-4] class="bounce">Frontend & Backend</h1>
+            <h2 [@fadeIn-4]>Hi! My name is Pedro that is my portfolio!</h2>
           </ion-text>
         </ion-col>
       </ion-row>
-      <ion-row class="ion-justify-content-center ion-align-items-center pic">
+      <ion-row [@fadeIn-5] class="ion-justify-content-center ion-align-items-center pic">
         <ion-img class="circle" src="../../../assets/images/home/circle.svg"></ion-img>
         <ion-img class="photo" src="../../../assets/images/home/pic.png"></ion-img>
       </ion-row>

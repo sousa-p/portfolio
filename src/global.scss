@@ -59,3 +59,18 @@ h2 {
   height: fit-content;
   min-height: 100vh;
 }
+
+.bounce {
+  position: relative;
+  animation: bounce 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(.2rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}

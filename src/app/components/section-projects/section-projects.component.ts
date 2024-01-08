@@ -19,7 +19,7 @@ export class SectionProjectsComponent implements OnInit {
         prevEl: '.swiper-button-prev',
       },
       slidesPerView: 'auto',
-      loop: true,
+      loop: false,
       autoplay: {
         delay: 4500,
         disableOnInteraction: true,
