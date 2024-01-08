@@ -18,19 +18,14 @@ export class SectionProjectsComponent implements OnInit {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      slidesPerView: 'auto',
+      slidesPerView: 1,
       loop: false,
+      centeredSlides: true,
+      centerInsufficientSlides: true,
+      centeredSlidesBounds: true,
       autoplay: {
         delay: 4500,
         disableOnInteraction: true,
-      },
-      breakpoints: {
-        1200: {
-          slidesPerView: 3,
-        },
-        768: {
-          slidesPerView: 1,
-        },
       },
     });
   }
