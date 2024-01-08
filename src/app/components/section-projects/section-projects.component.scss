@@ -6,7 +6,8 @@ h1 {
   margin: 0 auto;
   width: 300px;
   height: 450px;
-  border: solid 6px #000;
+  border: solid 6px var(--ion-color-primary);
+  ;
   background: var(--ion-background-color, #fff);
 }
 
@@ -19,9 +20,11 @@ h1 {
   margin-top: 32px;
   padding: 32px;
   border-radius: 100%;
-  color: #000;
+  color: var(--ion-color-primary);
+  ;
   background-color: var(--ion-background-color, #fff);
-  border: solid 6px #000;
+  border: solid 6px var(--ion-color-primary);
+  ;
 }
 
 .swiper-container {

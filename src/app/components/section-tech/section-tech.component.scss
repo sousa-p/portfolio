@@ -5,7 +5,8 @@ h1 {
 
 .card {
   margin-bottom: 32px;
-  border: solid 6px #000;
+  border: solid 6px var(--ion-color-primary);
+  ;
   height: 400px;
   min-width: 240px;
   min-height: 75vh;
