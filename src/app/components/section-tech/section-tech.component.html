@@ -4,41 +4,15 @@
       <ion-text class="ion-text-center">
         <h1 class="bounce-d">Tech.</h1>
       </ion-text>
-
       <ion-row class="ion-justify-content-between">
         <ion-col class="card" sizeLg="3.75" size="12">
           <ion-text class="ion-text-center text-1">
             <p>Frontend <ion-icon name="brush-outline"></ion-icon></p>
           </ion-text>
           <ul>
-            <li>
+            <li *ngFor="let stack of this.frontEndStacks">
               <ion-text class="text-2">
-                <p>TypeScript</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Angular</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Ionic</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Vue.js</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Flutter</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Others...</p>
+                <p>{{ stack }}</p>
               </ion-text>
             </li>
           </ul>
@@ -48,34 +22,9 @@
             <p>Backend <ion-icon name="server-outline"></ion-icon></p>
           </ion-text>
           <ul>
-            <li>
+            <li *ngFor="let stack of this.backEndStacks">
               <ion-text class="text-2">
-                <p>PHP</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Laravel</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Lumen</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>MySQL</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>RESTfulAPI</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Others...</p>
+                <p>{{ stack }}</p>
               </ion-text>
             </li>
           </ul>
@@ -85,34 +34,9 @@
             <p>Tools <ion-icon name="construct-outline"></ion-icon></p>
           </ion-text>
           <ul>
-            <li>
+            <li *ngFor="let tool of this.tools">
               <ion-text class="text-2">
-                <p>Git</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Github</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Figma</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Photoshop</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Docker</p>
-              </ion-text>
-            </li>
-            <li>
-              <ion-text class="text-2">
-                <p>Others...</p>
+                <p>{{ tool }}</p>
               </ion-text>
             </li>
           </ul>
