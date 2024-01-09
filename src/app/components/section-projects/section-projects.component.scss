@@ -8,11 +8,10 @@ h1 {
   background: var(--ion-background-color, #fff);
 
   &__image {
-    max-width: 480px;
+    width: 480px;
     height: 480px;
     margin: 0 auto;
 
-    border-radius: 15px;
     border: 6px solid #000;
   }
 
@@ -33,13 +32,18 @@ h1 {
 .swiper-button-prev,
 .swiper-button-next {
   margin-top: 32px;
-  padding: 30px;
   border-radius: 100%;
   color: var(--ion-color-primary);
-  background-color: var(--ion-background-color, #fff);
-  border: solid 6px var(--ion-color-primary);
 }
 
 .swiper-container {
   --swiper-pagination-color: var(--ion-color-primary);
+}
+
+@media (max-width: 768px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
