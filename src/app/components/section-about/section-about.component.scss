@@ -1,5 +1,6 @@
 #about {
-  background: url('../../../assets/images/about/top-wave.svg') no-repeat top;
+  background: url('../../../assets/images/about/top-wave.svg') no-repeat;
+  background-size: contain;
 }
 
 
@@ -14,6 +15,12 @@ h1 {
 #line {
   height: 55vh;
   width: 6px;
-
   background-color: var(--ion-color-primary);
+}
+
+
+@media (max-width: 1350px) {
+  #about {
+    background-size: auto;
+  }
 }
