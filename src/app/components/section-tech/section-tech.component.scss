@@ -4,9 +4,10 @@ h1 {
 
 
 .card {
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
   border: solid 6px var(--ion-color-primary);
-  height: 430px;
+  min-height: max-content;
+  height: 580px;
   min-width: 240px;
   transition: .3s all ease;
 

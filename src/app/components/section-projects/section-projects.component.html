@@ -4,58 +4,47 @@
       <ion-text class="ion-text-center">
         <h1 class="bounce-d">Projects</h1>
       </ion-text>
-      <div class="swiper-container" #swiper>
-        <div class="swiper-wrapper">
-          <ng-container *ngFor="let project of this.projects">
-            <div class="swiper-slide">
-              <ion-row class="ion-justify-content-around ion-align-tems-center slide">
-                <ion-col sizeLg="5" size="12">
-                  <ion-img class="slide__image" [src]="this.project.image"></ion-img>
-                </ion-col>
-                <ion-col sizeLg="5" size="12">
-                  <ion-text class="ion-text-center">
-                    <h2> {{ project.title }} </h2>
-                  </ion-text>
+      <ng-container *ngFor="let project of this.projects; let id = index">
+        <ion-row class="project ion-justify-content-around ion-align-tems-center">
+          <ion-col sizeLg="5" size="12">
+            <img class="project__image" [src]="this.project.image">
+          </ion-col>
+          <ion-col sizeLg="5" size="12">
+            <ion-text class="ion-text-center">
+              <h2> {{ project.title }} </h2>
+            </ion-text>
 
-                  <ion-text class="ion-text text-2 ion-margin-vertical">
-                    <p>
-                      {{ project.desc }}
-                    </p>
-                  </ion-text>
+            <ion-text class="ion-text text-2 ion-margin-vertical">
+              <p>
+                {{ project.desc }}
+              </p>
+            </ion-text>
 
-                  <ion-row class="stacks ion-margin-vertical">
-                    <ng-container *ngFor="let stack of project.stacks">
-                      <ion-img class="stack" [src]="'https://skillicons.dev/icons?i=' + stack" height="40"
-                        [alt]="stack + 'logo'" />
-                    </ng-container>
-                  </ion-row>
-                  <ion-row class="ion-margin-vertical">
-                    <ng-container *ngIf="this.project.website">
-                      <a [href]="this.project.website" target="_blank" rel="noopener noreferrer">
-                        <ion-button>
-                          View Site
-                        </ion-button>
-                      </a>
-                    </ng-container>
-                    <ng-container *ngIf="this.project.code">
-                      <a [href]="this.project.code" target="_blank" rel="noopener noreferrer">
-                        <ion-button>
-                          View Code
-                        </ion-button>
-                      </a>
-                    </ng-container>
-                  </ion-row>
-                </ion-col>
-              </ion-row>
-            </div>
-          </ng-container>
-
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-
+            <ion-row class="stacks ion-margin-vertical">
+              <ng-container *ngFor="let stack of project.stacks">
+                <img class="stack" [src]="'https://skillicons.dev/icons?i=' + stack" height="50"
+                  [alt]="stack + 'logo'" />
+              </ng-container>
+            </ion-row>
+            <ion-row class="ion-margin-vertical">
+              <ng-container *ngIf="this.project.website">
+                <a [href]="this.project.website" target="_blank" rel="noopener noreferrer">
+                  <ion-button>
+                    View Site
+                  </ion-button>
+                </a>
+              </ng-container>
+              <ng-container *ngIf="this.project.code">
+                <a [href]="this.project.code" target="_blank" rel="noopener noreferrer">
+                  <ion-button>
+                    View Code
+                  </ion-button>
+                </a>
+              </ng-container>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ng-container>
     </ion-col>
   </ion-row>
 </div>

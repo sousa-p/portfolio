@@ -2,48 +2,22 @@ h1 {
   margin-bottom: 7vh;
 }
 
-.slide {
-  margin: 0 auto;
-  min-height: 500px;
-  background: var(--ion-background-color, #fff);
+.project {
+  margin: 72px auto;
 
   &__image {
-    width: 480px;
-    height: 480px;
-    margin: 0 auto;
-
     border: 6px solid #000;
   }
-
-  .stack {
-    margin-right: 16px;
-  }
-
-  ion-button {
-    --border-radius: 0;
-    --padding-top: 16px;
-    --padding-bottom: 16px;
-
-    margin-right: 16px;
-  }
-
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  margin-top: 32px;
-  border-radius: 100%;
-  color: var(--ion-color-primary);
+.stack {
+  margin: 8px 16px 16px 0;
 }
 
-.swiper-container {
-  --swiper-pagination-color: var(--ion-color-primary);
-}
+ion-button {
+  --border-radius: 0;
+  --padding-top: 16px;
+  --padding-bottom: 16px;
 
-@media (max-width: 768px) {
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
+  margin-right: 16px;
 }

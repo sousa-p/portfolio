@@ -11,20 +11,24 @@ export class SectionTechComponent implements OnInit {
   ngOnInit() {}
 
   frontEndStacks: String[] = [
+    'JavaScript',
     'TypeScript',
     'Angular',
     'Ionic',
     'Vue.js',
+    'Tailwind',
     'Flutter',
     'Others...',
   ];
 
   backEndStacks: String[] = [
     'PHP',
+    'C#',
+    '.NET',
     'Laravel',
     'Lumen',
     'MySQL',
-    'RESTfulAPI',
+    'Node.js',
     'Others...',
   ];
 
@@ -34,6 +38,8 @@ export class SectionTechComponent implements OnInit {
     'Figma',
     'Photoshop',
     'Docker',
+    'Linux',
+    'Visual Code',
     'Others...',
   ];
 }
